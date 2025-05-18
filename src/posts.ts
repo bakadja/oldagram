@@ -1,3 +1,10 @@
+import avatarVangogh from "./assets/avatar-vangogh.jpg";
+import postVangogh from "./assets/post-vangogh.jpg";
+import avatarCourbet from "./assets/avatar-courbet.jpg";
+import postCourbet from "./assets/post-courbet.jpg";
+import avatarDucreux from "./assets/avatar-ducreux.jpg";
+import postDucreux from "./assets/post-ducreux.jpg";
+
 export default interface Post {
   name: string;
   username: string;
@@ -13,8 +20,8 @@ export const posts: Post[] = [
     name: "Vincent van Gogh",
     username: "vincey1853",
     location: "Zundert, Netherlands",
-    avatar: "src/assets/avatar-vangogh.jpg",
-    post: "src/assets/post-vangogh.jpg",
+    avatar: avatarVangogh,
+    post: postVangogh,
     comment: "just took a few mushrooms lol",
     likes: 21,
   },
@@ -22,8 +29,8 @@ export const posts: Post[] = [
     name: "Gustave Courbet",
     username: "gus1819",
     location: "Ornans, France",
-    avatar: "src/assets/avatar-courbet.jpg",
-    post: "src/assets/post-courbet.jpg",
+    avatar: avatarCourbet,
+    post: postCourbet,
     comment: "i'm feelin a bit stressed tbh",
     likes: 4,
   },
@@ -31,8 +38,8 @@ export const posts: Post[] = [
     name: "Joseph Ducreux",
     username: "jd1735",
     location: "Paris, France",
-    avatar: "src/assets/avatar-ducreux.jpg",
-    post: "src/assets/post-ducreux.jpg",
+    avatar: avatarDucreux,
+    post: postDucreux,
     comment:
       "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
     likes: 152,
