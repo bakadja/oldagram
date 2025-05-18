@@ -1,4 +1,4 @@
-interface Post {
+export default interface Post {
   name: string;
   username: string;
   location: string;
