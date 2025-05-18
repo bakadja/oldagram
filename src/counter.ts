@@ -1,9 +1,17 @@
-export function setupCounter(element: HTMLButtonElement) {
-  let counter = 0
+function count(btnEl: HTMLButtonElement, spanEl: HTMLSpanElement) {
+  const prevCounter = Number(spanEl.innerHTML) 
+  let counter = prevCounter
+
   const setCounter = (count: number) => {
     counter = count
-    element.innerHTML = `count is ${counter}`
+    spanEl.innerHTML = `${counter}`
   }
-  element.addEventListener('click', () => setCounter(counter + 1))
-  setCounter(0)
+  btnEl.addEventListener('click', () => setCounter(counter + 1))
 }
+
+export function setupCounter(btnEls: NodeListOf<HTMLButtonElement>, spanEls: NodeListOf<HTMLSpanElement> ) {
+  for (let index = 0; index < btnEls.length; index++) {
+    count(btnEls[index], spanEls[index])
+  }
+}
+
